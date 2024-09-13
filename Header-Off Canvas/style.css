@@ -1,0 +1,349 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --Color-1 : burlywood;
+    --Color-2 : lightsalmon;
+    --Color-3 : teal;
+    --Color-4 : white;
+    --Color-5 : rgb(20, 106, 192);
+    --Color-6 : dodgerblue;
+    --Color-7 : blue;
+    --Color-8 : #6610f2;
+    --Color-9 : #40A578;
+    --Color-10 : #FFFFFF;
+}
+
+.navbar {
+    height: 64px;
+    background-color: var(--Color-1);
+}
+
+.nav_content {
+    width: 455px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav_content li {
+    height: auto;
+    width: 75px;
+    background-color: transparent;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1.5px solid transparent;
+    border-bottom: 0;
+    transition: 0.5s all ease;
+}
+
+.nav_content li:hover {
+    height: auto;
+    width: 75px;
+    color: var(--Color-4);
+    background-color: var(--Color-3);
+    text-align: center;
+    border: 1.5px solid var(--Color-4);
+    border-bottom: 0;
+    transition: 0.5s all ease;
+}
+
+.nav_content li::after {
+    content: '';
+    height: 1.5px;
+    width: 0%;
+    display: block;
+    margin: auto;
+    background-color: var(--Color-4);
+    transition: 0.5s all ease;
+}
+
+.nav_content li:hover::after {
+    content: '';
+    height: 1.5px;
+    width: 100%;
+    display: block;
+    background-color: var(--Color-4);
+    transition: 0.5s all ease;
+}
+
+.logo {
+    height: auto;
+    width: auto;
+    transition: 0.5s all ease;
+}
+
+.logo:hover {
+    color: var(--Color-8);
+    background-color: var(--Color-4);
+    letter-spacing: 4px;
+    transition: 0.5s all ease;
+}
+
+.socialMediaAccount {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.socialMediaAccount > li:nth-child(1) {
+    height: 30px;
+    width: 30.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: #fff;
+    transition: 0.5s all ease;
+}
+
+.socialMediaAccount > li:nth-child(1):hover {
+    color: var(--Color-5);
+    transition: 0.5s all ease;
+}
+
+.socialMediaAccount > li:nth-child(2) {
+    height: 30px;
+    width: 30.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-size: 30px;
+    transition: 0.5s all ease;
+}
+
+.socialMediaAccount > li:nth-child(2):hover {
+    color: var(--Color-6);
+    transition: 0.5s all ease;
+}
+
+.socialMediaAccount > li:nth-child(3) {
+    height: 30px;
+    width: 30.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Color-4);
+    font-size: 30px;
+    transition: 0.5s all ease;
+}
+
+.socialMediaAccount > li:nth-child(3):hover {
+    color: var(--Color-7);
+    transition: 0.5s all ease;
+}
+
+.socialMediaAccount > li:nth-child(4) {
+    height: 30px;
+    width: 30.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Color-4);
+    font-size: 30px;
+    transition: 0.5s all ease;
+}
+
+.socialMediaAccount > li:nth-child(4):hover {
+    color: var(--Color-4);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    transition: 0.5s all ease;
+}
+
+.hamburger {
+    height: 32px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.sideNav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.sideNav > li {
+    height: 50px;
+    width: 100%;
+}
+
+.sideNav > li p {
+    height: 50px;
+    width: 150px;
+    transform: translate(0px, 0px);
+    transition: 0.55s all ease 0.3s;
+}
+
+.sideNav > li:nth-child(1):hover > p {
+    color: var(--Color-10);
+    transform: translate(152px, 0px);
+    transition: 0.55s all ease 0.2s;
+}
+
+.sideNav > li:nth-child(2):hover > p {
+    color: var(--Color-10);
+    transform: translate(150px, 0px);
+    transition: 0.55s all ease 0.2s;
+}
+
+.sideNav > li:nth-child(3):hover > p {
+    color: var(--Color-10);
+    transform: translate(135px, 0px);
+    transition: 0.55s all ease 0.2s;
+}
+
+.sideNav > li:nth-child(4):hover > p {
+    color: var(--Color-10);
+    transform: translate(128px, 0px);
+    transition: 0.55s all ease 0.2s;
+}
+
+.sideNav > li:nth-child(5):hover > p {
+    color: var(--Color-10);
+    transform: translate(156px, 0px);
+    transition: 0.55s all ease 0.2s;
+}
+
+.sideNav li::before {
+    content: "";
+    height: 45px;
+    width: 0%;
+    display: inline-block; 
+    position: absolute;
+    background-color: var(--Color-3 );
+    z-index: -1;
+    margin-right: auto;
+    transition: 0.55s all ease 0.1s;
+}
+
+.sideNav li:hover::before {
+    width: 100%;
+    margin-right: auto;
+    transition: 0.55s all ease 0.1s;
+}
+
+.sideNav li::after {
+    content: "";
+    height: 5px;
+    width: 0%;
+    display: inline-block; 
+    position: absolute;
+    background-color: var(--Color-9 );
+    transform: translate(0px, -6px);
+    z-index: -1;
+    margin-right: auto;
+    transition: 0.55s all ease;
+}
+
+.sideNav li:hover::after {
+    width: 100%;
+    margin-right: auto;
+    transition: 0.55s all ease;
+}
+
+.sideNav_comercialSocialmedia {
+    height: auto;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.sideNav_comercialSocialmedia > li {
+    height: 31px;
+    width: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    list-style: none;
+    transition: 0.5s all ease;
+}
+
+.sideNav_comercialSocialmedia > li:nth-child(1):hover {
+    color: var(--Color-5);
+    transition: 0.5s all ease;
+}
+
+.sideNav_comercialSocialmedia > li:nth-child(2):hover {
+    color: var(--Color-6);
+    transition: 0.5s all ease;
+}
+
+.sideNav_comercialSocialmedia > li:nth-child(3):hover {
+    color: var(--Color-7);
+    transition: 0.5s all ease;
+}
+
+.sideNav_comercialSocialmedia > li:nth-child(4):hover {
+    color: var(--Color-4);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    transition: 0.5s all ease;
+}
+
+@media (max-width:1200px) {
+    .nav_options {
+        display: none !important;
+    }
+}
+
+@media (max-width:1199px) {
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media (max-width:576px) {
+    .comercialSocialmedia {
+        display: none !important;
+    }
+}
+
+@media (max-width:425px) {
+    .offcanvas {
+        width: 310px !important;
+    }
+    
+    .sideNav > li:nth-child(1):hover > p {
+        color: var(--Color-10);
+        transform: translate(114px, 0px);
+        transition: 0.5s all ease;
+    }
+    
+    .sideNav > li:nth-child(2):hover > p {
+        color: var(--Color-10);
+        transform: translate(110px, 0px);
+        transition: 0.5s all ease;
+    }
+    
+    .sideNav > li:nth-child(3):hover > p {
+        color: var(--Color-10);
+        transform: translate(102px, 0px);
+        transition: 0.5s all ease;
+    }
+    
+    .sideNav > li:nth-child(4):hover > p {
+        color: var(--Color-10);
+        transform: translate(96px, 0px);
+        transition: 0.5s all ease;
+    }
+    
+    .sideNav > li:nth-child(5):hover > p {
+        color: var(--Color-10);
+        transform: translate(120px, 0px);
+        transition: 0.5s all ease;
+    }
+}
